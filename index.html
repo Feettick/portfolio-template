@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+</head>
+<body style="font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f8f8f8; color: #333;">
+
+    <header style="background-color: #292b2c; color: #fff; padding: 10px 0;">
+        <nav style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: center;">
+            <h1 style="font-size: 1.5em; margin: 0;">Your Name</h1>
+            <ul style="list-style: none; display: flex; gap: 20px;">
+                <li><a href="#about" style="text-decoration: none; color: #fff; font-size: 1.2em;">About</a></li>
+                <li><a href="#projects" style="text-decoration: none; color: #fff; font-size: 1.2em;">Projects</a></li>
+                <li><a href="#contact" style="text-decoration: none; color: #fff; font-size: 1.2em;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" style="padding: 80px 0; text-align: center; background-color: #007bff; color: #fff;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h1 style="font-size: 2.5em; margin: 0;">Welcome to My Advanced Portfolio</h1>
+            <p style="font-size: 1.2em; margin: 10px 0;">Your introduction and a brief statement about your expertise.</p>
+            <a href="#contact" style="display: inline-block; padding: 10px 20px; background-color: #fff; color: #007bff; text-decoration: none; border-radius: 5px; font-size: 1.2em;">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="about" style="padding: 40px 0; background-color: #fff;">
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+            <h2 style="font-size: 2em; color: #333;">About Me</h2>
+            <p style="font-size: 1.2em; color: #555;">Provide information about yourself, your skills, and your background.</p>
+        </div>
+    </section>
+
+    <section id="projects" style="padding: 40px 0; background-color: #f8f8f8;">
+        <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+            <h2 style="font-size: 2em; color: #333;">Projects</h2>
+            <div class="project" style="border: 1px solid #ccc; padding: 20px; margin: 20px 0; border-radius: 5px;">
+                <img src="project1.jpg" alt="Project 1" style="max-width: 100%; border-radius: 5px;">
+                <h3 style="font-size: 1.5em; color: #333;">Project 1</h3>
+                <p style="font-size: 1.2em; color: #555;">Description of your project.</p>
+                <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 5px; font-size: 1.2em;">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="padding: 40px 0; text-align: center; background-color: #007bff; color: #fff;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="font-size: 2em; margin: 0;">Contact Me</h2>
+            <p style="font-size: 1.2em;">You can reach me at your.email@example.com</p>
+            <form id="contact-form" style="max-width: 400px; margin: 0 auto;">
+                <input type="text" id="name-input" placeholder="Your Name" style="display: block; width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; font-size: 1.2em;">
+                <input type="email" id="email-input" placeholder="Your Email" style="display: block; width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; font-size: 1.2em;">
+                <textarea id="message-input" placeholder="Your Message" style="display: block; width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; font-size: 1.2em;"></textarea>
+                <button type="submit" style="display: inline-block; padding: 10px 20px; background-color: #fff; color: #007bff; text-decoration: none; border-radius: 5px; font-size: 1.2em;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer style="background-color: #292b2c; color: #fff; text-align: center; padding: 10px 0;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <p style="font-size: 1em;">&copy; 2023 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for the contact form
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const name = document.getElementById('name-input').value;
+            const email = document.getElementById('email-input').value;
+            const message = document.getElementById('message-input').value;
+            alert(`Thank you, ${name}! Your message has been sent to ${email}: ${message}`);
+        });
+    </script>
+</body>
+</html>
